@@ -10,6 +10,7 @@
 <html>
 <head>
     <title>Title</title>
+    <jsp:directive.include file="/jsp/includeJsp.jsp"/>
 </head>
 <body>
 <br><br>
@@ -20,9 +21,13 @@
         <div>${item.START_CNTN}</div>
     </c:forEach>
 </div>
+<div>
+    <button type="button" onclick="testBtn()">Click</button>
+</div>
 
-<script>
 
+
+<script type="text/javascript">
 </script>
 </body>
 </html>

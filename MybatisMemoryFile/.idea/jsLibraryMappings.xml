@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JavaScriptLibraryMappings">
+    <file url="file://$PROJECT_DIR$/../Jquery_lib/jquery-3.6.0.min.js" libraries="{@types/jquery, @types/jquery-ajax-chain, @types/jquery-alertable, jQuery}" />
+    <file url="PROJECT" libraries="{@types/jquery, @types/jquery-ajax-chain, @types/jquery-alertable, jQuery}" />
+    <includedPredefinedLibrary name="HTTP Response Handler" />
+  </component>
+</project>

@@ -10,10 +10,12 @@
 <head>
     <title>Title</title>
 </head>
+<!-- 여기에 jsp - cdn 관련된 링크들 include 하기 -->
 <style>
     .container {
         width: 500px;
         margin: 0 auto;
+
     }
     #pageName {
         color: palevioletred;
@@ -37,7 +39,6 @@
             <jsp:include page="/WEB-INF/views/${view}.jsp"></jsp:include>
         </div>
     </div>
-
 
 
 <script>

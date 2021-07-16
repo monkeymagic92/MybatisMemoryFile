@@ -9,10 +9,17 @@
         <setting name="defaultStatementTimeout" value="25000"/>
     </settings>
 
-
     <!-- mybatis Alias 주는곳 -->
     <typeAliases>
+
+        <!-- Start -->
         <typeAlias type="jy.memory.start.model.StartVO" alias="StartVO"/>
+
+        <!-- Ajax -->
+        <typeAlias type="jy.memory.ajax.model.AjaxVO" alias="AjaxVO"/>
+
+        <!-- Map -->
         <typeAlias alias="LinkedHashMap" type="java.util.LinkedHashMap"/>
+
     </typeAliases>
 </configuration>
