@@ -10,36 +10,42 @@
 <html>
 <head>
     <title>Title</title>
-    <link rel="stylesheet" href="/res/css/testCss.css">
+    <link rel="stylesheet" href="/res/css/include.css">
 </head>
 
-<style>
-
-
-</style>
 <body>
-    <!-- 비쥬얼 스튜디오에서 작업해서 헤드 깔끔하게 만들기 -->
-    <div class="container">
-
-        <h1 id="testH">아라라</h1>
-
-        <h2>Test File  -  (include)</h2>
-        <span id="pageName">${pageName}</span>
-
-        <%-- include 참조할 jsp view 값 --%>
-        <div class="includeContainer">
-            <jsp:include page="/WEB-INF/views/${view}.jsp"></jsp:include>
+<div class="container">
+    <div class="headerBox">
+        <span id="includeHeader">Include Header</span>
+        <div class="headerClick">
+            <span class="headerEle" id="headerEle1" onclick="moveToStart()">Start</span>
+            <span class="headerEle" id="headerEle2" onclick="moveToAjax()">Ajax</span>
         </div>
     </div>
 
+    <div class="mainContainer">
+        <span id="controlTitle">= ${pageName} =</span>
+    </div>
+    <div class="includeContainer">
+        <jsp:include page="/WEB-INF/views/${view}.jsp"></jsp:include>
+    </div>
+</div>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.3.0/jquery.form.min.js" integrity="sha384-qlmct0AOBiA2VPZkMY3+2WqkHtIQ9lSdAsAn5RUJD/3vA5MKDgSGcdmIv4ycVxyn" crossorigin="anonymous"></script>
 <script type="text/javascript" src="/res/js/testJs.js"></script>
 <script>
 
+    function moveToStart() {
+        location.href = "/start/startTest";
+    }
+
+    function moveToAjax() {
+        location.href = "/ajax/ajaxTest";
+    }
+
     $(document).ready(function() {
-        test(); // js파일 안에 있는 test() 함수
+        // ...
     })
 
 

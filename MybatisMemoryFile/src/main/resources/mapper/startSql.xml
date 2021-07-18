@@ -5,6 +5,5 @@
 
     <select id="startList" resultType="StartVO">
         SELECT * FROM START_TEST
-        WHERE START_SEQ = 2
     </select>
 </mapper>

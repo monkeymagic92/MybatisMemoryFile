@@ -19,6 +19,7 @@
         <div>${item.START_SEQ}</div>
         <div>${item.START_TITLE}</div>
         <div>${item.START_CNTN}</div>
+        <br>
     </c:forEach>
 </div>
 <div>

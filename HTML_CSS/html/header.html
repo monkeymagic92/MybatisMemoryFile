@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpringMemoryHeader</title>
+    <link rel="stylesheet" href="/css/header.css"/>    
+</head>
+<body>
+    <div class="container">
+        <div class="headerBox">
+            <span id="includeHeader">Include Header</span>
+            <div class="headerClick">
+                <span class="headerEle" id="hedaerel1" onclick="moveToStart()">Start</span>
+                <span class="headerEle" id="hedaerel2" onclick="moveToAjax()">Ajax</span>
+            </div>
+        </div>
+        
+        <div class="mainContainer">
+            <span id="controlTitle">${pageName}</span>
+        </div>
+        <div class="includeContainer">
+            dasjoi
+            <jsp:include page="/WEB-INF/views/${view}.jsp"></jsp:include>
+        </div>
+    </div>
+<script>
+    function moveToStart() {
+        location.href = "mfdos";
+    }
+
+    function moveToAjax() {
+        location.href = "mfdos";
+    }
+</script>
+</body>
+</html>

@@ -57,7 +57,8 @@
             ,success: function(data) {
                 alert('이름 : ' + data.name + '\n'
                     + '나이 : ' + data.age + '\n'
-                    + '취미 : ' + data.hobby);
+                    + '취미 : ' + data.hobby + '\n'
+                    + ' - name값만 data 넘겨줬음 -');
             }
         })
     }
