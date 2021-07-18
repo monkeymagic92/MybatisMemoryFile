@@ -11,13 +11,16 @@
     <title>Title</title>
     <link rel="stylesheet" href="/res/css/testCss.css">
     <script type="text/javascript" src="/res/js/testJs.js"></script>
+
 </head>
 <body>
     <h1 id="testH">Test</h1>
     <button type="button" onclick="test2()">click</button>
+
 <script>
+
     function test2() {
-        test();
+        // 테스트할 내용 입력
     }
 
 </script>

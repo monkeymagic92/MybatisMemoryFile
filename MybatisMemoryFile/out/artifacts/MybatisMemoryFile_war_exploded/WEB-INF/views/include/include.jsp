@@ -7,37 +7,21 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<c:set var="path" value="${pageContext.request.contextPath}"/>
 <html>
 <head>
     <title>Title</title>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.3.0/jquery.form.min.js" integrity="sha384-qlmct0AOBiA2VPZkMY3+2WqkHtIQ9lSdAsAn5RUJD/3vA5MKDgSGcdmIv4ycVxyn" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/res/css/testCss.css">
 </head>
-<!-- 여기에 jsp - cdn 관련된 링크들 include 하기 -->
+
 <style>
-    .container {
-        width: 500px;
-        margin: 0 auto;
-    }
-    #pageName {
-        color: palevioletred;
-        font-weight: bold;
-        font-size: 1.5em;
-    }
-    .includeContainer {
-        margin-top: 90px;
-        margin-left: 50px;
-    }
+
 
 </style>
 <body>
+    <!-- 비쥬얼 스튜디오에서 작업해서 헤드 깔끔하게 만들기 -->
     <div class="container">
 
-        <!-- css 파일 참조 테스트 -->
         <h1 id="testH">아라라</h1>
-        <!-- css 파일 참조 테스트 -->
-
 
         <h2>Test File  -  (include)</h2>
         <span id="pageName">${pageName}</span>
@@ -48,9 +32,14 @@
         </div>
     </div>
 
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.3.0/jquery.form.min.js" integrity="sha384-qlmct0AOBiA2VPZkMY3+2WqkHtIQ9lSdAsAn5RUJD/3vA5MKDgSGcdmIv4ycVxyn" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/res/js/testJs.js"></script>
 <script>
 
     $(document).ready(function() {
+        test(); // js파일 안에 있는 test() 함수
     })
 
 

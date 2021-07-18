@@ -1,3 +1,17 @@
+.container {
+    width: 500px;
+    margin: 0 auto;
+}
+#pageName {
+    color: palevioletred;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+.includeContainer {
+    margin-top: 90px;
+    margin-left: 50px;
+}
+
 #testH {
     color: red;
 }

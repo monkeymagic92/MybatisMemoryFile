@@ -26,14 +26,11 @@
 </form>
 <br>
 <button type="button" id="testBtn" onclick="testBtnClick()">AjaxSubmit Btn</button>
-<br>
+<br><br>
 <button type="button" id="testBtn2" onclick="testBtnClick2()">Ajax Btn</button>
 <%--<jsp:directive.include file="/WEB-INF/views/include/include.jsp"/>--%>
 <%--<script type="text/javascript" src="js/test.js"></script>--%>
 <script type="text/javascript">
-
-    let val = 0;
-    // let valResult = document.getElementById("val");
 
     // == ajaxSubmit 사용 ==
     function testBtnClick() {
@@ -42,21 +39,25 @@
             url: '/ajax/ajaxTestPost'
             ,type: 'post'
             ,success: function(data) {
-                alert('이름 : ' + data.name + '\n' + '나이 : ' + data.age + '\n' + '취미 : ' + data.hobby);
+                alert('이름 : ' + data.name + '\n'
+                    + '나이 : ' + data.age + '\n'
+                    + '취미 : ' + data.hobby);
             }
         })
     }
 
     // == 기본 ajax 사용 ==
     function testBtnClick2() {
-        var name = $("#name").val();
+        let name = $("#name").val();
 
         $.ajax({
             url: '/ajax/ajaxTestPost'
             , type: 'post'
             , data: {name: name}
             ,success: function(data) {
-                alert('이름 : ' + data.name + '\n' + '나이 : ' + data.age + '\n' + '취미 : ' + data.hobby);
+                alert('이름 : ' + data.name + '\n'
+                    + '나이 : ' + data.age + '\n'
+                    + '취미 : ' + data.hobby);
             }
         })
     }
