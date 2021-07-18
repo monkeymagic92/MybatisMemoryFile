@@ -8,10 +8,11 @@
     <!-- 어노테이션 기반으로 동작하도록 설정 추가 -->
     <mvc:annotation-driven/>
 
+    <!-- jsp에서 /res/ 로 입력시 src/main/resources/static 경로를 자동으로 참조하겠다 -->
+    <mvc:resources mapping="/res/**" location="classpath:/static/" />
 
     <!-- 아래 패키지로 경로를 확인하겠다(?) 찾겠다 -->
     <context:component-scan base-package="jy.memory" />
-
 
     <!-- 이클립스로 치면 servlet-context.xml
          mybatis 위치 찾는 녀석  -->

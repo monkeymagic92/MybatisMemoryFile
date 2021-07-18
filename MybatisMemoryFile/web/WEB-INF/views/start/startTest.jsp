@@ -10,7 +10,7 @@
 <html>
 <head>
     <title>Title</title>
-    <jsp:directive.include file="/jsp/includeJsp.jsp"/>
+<%--    <jsp:directive.include file="/include/include.jsp"/>--%>
 </head>
 <body>
 <br><br>
@@ -22,12 +22,15 @@
     </c:forEach>
 </div>
 <div>
-    <button type="button" onclick="testBtn()">Click</button>
+    <button type="button" onclick="moveToAjax()">ajaxControl 이동</button>
 </div>
 
 
 
 <script type="text/javascript">
+    function moveToAjax() {
+        location.href="/ajax/ajaxTest";
+    }
 </script>
 </body>
 </html>

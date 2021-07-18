@@ -30,13 +30,16 @@ public class AjaxController {
         model.addAttribute("pageName", "AjaxTest");
         model.addAttribute("view", ViewRef.Ajax);
 
-        return "/include/include";
+        return ViewRef.INCLUDE;
     }
 
     @RequestMapping(value = "/ajaxTestPost", method = RequestMethod.POST)
     @ResponseBody
-    public void ajaxTestPost(Model model, AjaxVO vo, HttpServletRequest request) {
-        
+    public AjaxVO ajaxTestPost(Model model, AjaxVO vo, HttpServletRequest request) {
+
         System.out.println("name값 : " + vo.getName());
+        System.out.println("age값 : " + vo.getAge());
+        System.out.println("hoby값 : " + vo.getHobby());
+        return vo;
     }
 }
