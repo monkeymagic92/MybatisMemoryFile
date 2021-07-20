@@ -22,16 +22,9 @@
         <br>
     </c:forEach>
 </div>
-<div>
-    <button type="button" onclick="moveToAjax()">ajaxControl 이동</button>
-</div>
-
-
 
 <script type="text/javascript">
-    function moveToAjax() {
-        location.href="/ajax/ajaxTest";
-    }
+
 </script>
 </body>
 </html>

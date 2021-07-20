@@ -17,19 +17,18 @@
 <div id="val" style="display: none;"></div>
 <br><br>
 <form id="testForm" name="testForm" method="post">
-    <span>이름 : </span><input type="text" id="name" name="name">
+    <span>이름&nbsp;&nbsp;</span><input type="text" id="name" name="name">
     <br>
-    <span>나이: </span><input type="text" id="age" name="age">
+    <span>나이&nbsp;&nbsp;</span><input type="text" id="age" name="age">
     <br>
-    <span>취미 : </span><input type="text" id="hobby" name="hobby">
+    <span>취미&nbsp;&nbsp;</span><input type="text" id="hobby" name="hobby">
     <br>
 </form>
 <br>
 <button type="button" id="testBtn" onclick="testBtnClick()">AjaxSubmit Btn</button>
 <br><br>
 <button type="button" id="testBtn2" onclick="testBtnClick2()">Ajax Btn</button>
-<%--<jsp:directive.include file="/WEB-INF/views/include/include.jsp"/>--%>
-<%--<script type="text/javascript" src="js/test.js"></script>--%>
+
 <script type="text/javascript">
 
     // == ajaxSubmit 사용 ==

@@ -37,6 +37,11 @@
     transition: 0.2s;
 }
 
+#kakaoImg1 {
+    width: 70px;
+    height: 60px;
+}
+
 .headerEle:hover {
     color: red;
     transition: 0.3s;
@@ -53,5 +58,18 @@
 }
 
 .includeContainer {
-    margin: 100px 0 0 0;
+    margin: 55px 0 0 0;
+    border: 2px solid grey;
+    border-radius: 6px;
+    height: 560px;
+}
+
+.kakaoContainer {
+    margin: 45px 0 0 0;
+}
+
+#kakaoATag {
+    text-decoration: none;
+    color: darkseagreen;
+    font-weight: bold;
 }
