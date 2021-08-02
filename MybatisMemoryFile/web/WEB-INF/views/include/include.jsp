@@ -11,7 +11,6 @@
 <head>
     <title>Title</title>
     <link rel="stylesheet" href="/res/css/include.css">
-
 </head>
 
 <body>
@@ -42,7 +41,7 @@
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.3.0/jquery.form.min.js" integrity="sha384-qlmct0AOBiA2VPZkMY3+2WqkHtIQ9lSdAsAn5RUJD/3vA5MKDgSGcdmIv4ycVxyn" crossorigin="anonymous"></script>
-<script type="text/javascript" src="/res/js/testJs.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/res/js/testJs.js"></script>
 <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
 <script>
 
@@ -70,12 +69,12 @@
         Kakao.Link.sendDefault({
             objectType: 'feed',
             content: {
-                title: '친구 취향 맞추기',
-                description: '(서버에서 보낸값) 님의 취향을 맞춰보세요 !',
+                title: '${kakaoName} 친구 취향 맞추기',
+                description: '${kakaoName} 님의 취향을 맞춰보세요 !',
                 imageUrl: 'https://blog.kakaocdn.net/dn/0mySg/btqCUccOGVk/nQ68nZiNKoIEGNJkooELF1/img.jpg',	// 사용하고자 하는 이미지
                 link: {
                     mobileWebUrl: 'http://localhost:8080/start/startTest',	// 모바일에서 접속할 URL
-                    webUrl: 'http://localhost:8080/start/startTest'		// 웹에서 접속할 URL
+                    webUrl: 'http://localhost:8080/start/startTest'		    // 웹에서 접속할 URL
                 },
             },
             buttons: [
@@ -83,7 +82,7 @@
                     title: '공유 하기',
                     link: {
                         mobileWebUrl: 'http://localhost:8080',		// 모바일에서 접속할 url
-                        webUrl: 'http://localhost:8080'			// 웹에서 접속할 url
+                        webUrl: 'http://localhost:8080'			    // 웹에서 접속할 url
                     },
                 }
             ],

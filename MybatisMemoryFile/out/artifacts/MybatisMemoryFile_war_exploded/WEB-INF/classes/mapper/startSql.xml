@@ -6,4 +6,16 @@
     <select id="startList" resultType="StartVO">
         SELECT * FROM START_TEST
     </select>
+
+    <select id="detail" parameterType="StartVO" resultType="StartVO">
+        SELECT * FROM START_TEST
+        WHERE START_SEQ = #{START_SEQ}
+    </select>
+
+    <insert id="startInsert" parameterType="StartVO">
+        INSERT INTO START_TEST
+        (START_TITLE, START_CNTN)
+        VALUES
+        (#{START_TITLE}, #{START_CNTN})
+    </insert>
 </mapper>

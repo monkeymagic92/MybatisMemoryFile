@@ -12,4 +12,8 @@ public interface StartMapper {
 
     List<StartVO> startList(); // START_TEST 테이블 조회
 
+    StartVO detail(StartVO vo);
+
+    int startInsert(StartVO vo);
+
 }

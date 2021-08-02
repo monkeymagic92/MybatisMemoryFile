@@ -1,9 +1,11 @@
 package jy.memory.start.model;
 
-public class StartVO {
+import jy.memory.core.CommonVO;
+
+public class StartVO extends CommonVO {
 
     private int START_SEQ;
-    private String START_TITLE;
+       private String START_TITLE;
     private String START_CNTN;
 
 

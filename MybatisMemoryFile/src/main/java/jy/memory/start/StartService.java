@@ -16,4 +16,16 @@ public class StartService {
     public List<StartVO> startList() {
         return mapper.startList();
     }
+
+    public StartVO detail(StartVO vo) {
+        StartVO vo2 = mapper.detail(vo);
+        return vo2;
+    }
+
+    //START_TEST 값 저장
+    public int startSave(StartVO vo) {
+        System.out.println("status 값 : " + vo.getSTATUS());
+
+        return mapper.startInsert(vo);
+    }
 }
